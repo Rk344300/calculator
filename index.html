@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function fun(input){
+			if(forms.answer.value.substring(0,1)=="-")
+				{forms.answer.value=forms.answer.value.substring(1,forms.answer.value.length)}
+		
+		else{
+			forms.answer.value="-"+forms.answer.value
+		}
+
+}
+
+	</script>
+</head>
+<body>
+
+
+	<div class="container">
+		<div class="screen" ><form name="forms"><input type="text" name="answer" id ="scr" size="20" readonly maxlength="50"></form></div>
+		<div class="buttons">
+			<p>
+			<input type="button" value=" SIN " class="button black" onclick="forms.answer.value = Math.sin(forms.answer.value) ">
+			<input type="button" value=" COS "  class="button black" onclick="forms.answer.value = Math.cos(forms.answer.value)">
+			<input type="button" value=" TAN " class="button black" onclick="forms.answer.value = Math.tan(forms.answer.value) ">
+			<input type="button" value=" (-) " class="button black" onclick="fun(forms.answer.value)">
+			<input type="button" value=" exp " class="button black" onclick="forms.answer.value +=Math.exp(forms.answer.value) ">
+		</p>
+			
+		<p>	
+			<input type="button" value=" &radic; " class="button black" onclick="forms.answer.value = Math.sqrt(forms.answer.value) ">
+			<input type="button" value=" SQR " class="button black" onclick="forms.answer.value = Math.pow(forms.answer.value,2) ">
+			<input type="button" value=" LOG " class="button black" onclick="forms.answer.value = Math.log(forms.answer.value) ">
+			<input type="button" value=" ^ " class="button black" onclick="forms.answer.value = Math.pow(forms.answer.value,forms.answer.value) ">
+			<input type="button" value=" IN " class="button black" onclick="forms.answer.value=Math.E ">
+		</p>
+			
+			<input type="button" value=" RCL " class="button black" onclick="forms.answer.value += '1' ">
+			<input type="button" value=" ( " class="button black" onclick="forms.answer.value += '(' ">
+			<input type="button" value=" ) " class="button black" onclick="forms.answer.value += ')' ">
+			<input type="button" value=" MOD " class="button black" onclick="forms.answer.value += '%' ">
+			<input type="button" value=" M+ " class="button black" onclick="forms.answer.value += 'M+' ">
+			<p>
+				<input type="button" value="ABS " class="button black" onclick="forms.answer.value =Math.abs(forms.answer.value) ">
+				<input type="button" value=" PI " class="button black" onclick="forms.answer.value +=Math.PI ">
+				<input type="button" value="c" class="button black" onclick="forms.answer.value= '' ">
+			<input type="button" value="del" class="button black" onclick="forms.answer.value=forms.answer.value.substring(0,forms.answer.value.length-1)">
+			</p>
+		<p>	
+			
+			<input type="button" value=" 1 " class="button silver" onclick="forms.answer.value += '1' ">
+			<input type="button" value=" 2 " class="button silver" onclick="forms.answer.value += '2' ">
+			<input type="button" value=" 3 " class="button silver" onclick="forms.answer.value += '3' ">
+			<input type="button" value=" + " class="button silver" onclick="forms.answer.value += '+' ">
+			<input type="button" value=" - " class="button silver" onclick="forms.answer.value += '-' ">
+		</p>	
+			
+		<p>	
+			<input type="button" value=" 4 " class="button silver" onclick="forms.answer.value += '4' ">
+			<input type="button" value=" 5 " class="button silver" onclick="forms.answer.value += '5' ">
+			<input type="button" value=" 6 " class="button silver" onclick="forms.answer.value += '6' ">
+			<input type="button" value=" * " class="button silver" onclick="forms.answer.value += '*' ">
+			<input type="button" value=" / " class="button silver" onclick="forms.answer.value += '/' ">
+			
+		</p>	
+			
+		<p>	
+			<input type="button" value=" 7 " class="button silver"  onclick="forms.answer.value += '7' ">
+			<input type="button" value=" 8 " class="button silver" onclick="forms.answer.value += '8' ">
+			<input type="button" value=" 9 " class="button silver" onclick="forms.answer.value += '9' ">
+			<input type="button" value=" 0 " class="button silver" onclick="forms.answer.value += '0' ">
+			<input type="button" value=" 00 " class="button silver" onclick="forms.answer.value += '00' ">
+			
+			
+		</p>	
+	        
+			
+		<p>	
+				
+			
+			
+			<input type="button" value=" = " class="button silver"  onclick="forms.answer.value = eval(forms.answer.value) ">
+	  </p>
+	</div>
+</div>
+ </body>
+</html>
